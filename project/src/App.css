@@ -1,0 +1,492 @@
+:root {
+  --primary-pink: #FF3C8A;
+  --primary-blue: #0076FF;
+  --white: #fff;
+  --black: #000;
+  --gray-bg: #f7f7f7;
+  --font-main: 'Montserrat', 'Poppins', Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body,
+.App {
+  font-family: var(--font-main);
+  margin: 0;
+  background: var(--gray-bg);
+  color: var(--black);
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--white);
+  padding: 24px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.sign-in-btn {
+  background-color: #FF3C8A;
+  color: var(--white);
+  border: none;
+  border-radius: 24px;
+  padding: 12px 36px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.hero-section {
+  background: url('./assets/herebg.png');
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-content.hero-left-align {
+  color: var(--white);
+  text-align: left;
+  max-width: 700px;
+  padding-left: 64px;
+}
+
+.hero-content.hero-left-align h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  line-height: 1.1;
+  font-family: "Ubuntu";
+}
+
+
+.hero-content.hero-left-align p {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+}
+
+.explore-btn {
+  background: var(--primary-pink);
+  color: var(--white);
+  border: none;
+  border-radius: 24px;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 60, 138, 0.15);
+}
+
+.welcome-section {
+  background: var(--white);
+  padding: 64px 0 32px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-content {
+  display: flex;
+  gap: 48px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome-text h2 {
+  color: var(--primary-blue);
+  font-size: 2.5rem;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.welcome-text p {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.read-more-btn {
+  background: var(--primary-pink);
+  color: var(--white);
+  border: none;
+  border-radius: 24px;
+  padding: 12px 32px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+.welcome-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.child-img-bg {
+  background: var(--primary-pink);
+  border-radius: 50% / 60%;
+  width: 220px;
+  height: 320px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.child-img {
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 0 0 90px 90px / 0 0 120px 120px;
+  margin-bottom: 0;
+  margin-top: 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+}
+
+.mission {
+  max-width: 300px;
+  text-align: left;
+}
+
+.mission h3 {
+  color: var(--primary-blue);
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.mission p {
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+  margin-top: 18px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats div span {
+  color: var(--primary-blue);
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.services-section {
+  background: var(--gray-bg);
+  padding: 48px 0;
+  text-align: center;
+}
+
+.services-section h2 {
+  color: var(--primary-blue);
+  margin-bottom: 32px;
+}
+
+.services-cards {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: 32px 24px;
+  width: 220px;
+  text-align: center;
+}
+
+.icon-placeholder {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-blue);
+  border-radius: 12px;
+  margin: 0 auto 18px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pinky {
+  background-color: #FF3C8A;
+}
+
+.clubs-section {
+  background: var(--white);
+  padding: 48px 0;
+  text-align: center;
+}
+
+.clubs-section h2 {
+  color: var(--primary-blue);
+  margin-bottom: 32px;
+}
+
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding:20px;
+  
+}
+
+.club-card {
+  /* background: var(--gray-bg); */
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+}
+
+.club-img-placeholder {
+  width: 100%;
+  /* height: 100px; */
+  /* background: #e0e0e0; */
+  border-radius: 12px;
+  padding: 20px;
+ 
+}
+
+.club-title {
+  color: var(--primary-blue);
+  font-weight: 500;
+}
+
+.app-section {
+  background: var(--white);
+  padding: 48px 0;
+  text-align: center;
+}
+
+.app-section h2 {
+  color: var(--primary-blue);
+  margin-bottom: 32px;
+}
+
+.app-info {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 32px;
+}
+
+.app-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.feature h4 {
+  color: var(--primary-blue);
+  margin-bottom: 4px;
+}
+
+.app-image-placeholder {
+  width: 180px;
+  height: 320px;
+  background: #e0e0e0;
+  border-radius: 24px;
+}
+
+.download-section {
+  margin-top: 24px;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin: 18px 0;
+}
+
+.google-play-btn,
+.app-store-btn {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 12px;
+  padding: 10px 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.app-stats {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.app-stats div span {
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer {
+  background: var(--primary-pink);
+  color: var(--white);
+  padding: 48px 0 0 0;
+}
+
+.newsletter {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.newsletter-form input {
+  padding: 10px 18px;
+  border-radius: 24px;
+  border: none;
+  font-size: 1rem;
+  width: 260px;
+}
+
+.newsletter-form button {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.footer-info,
+.footer-links,
+.footer-app {
+  flex: 1;
+}
+
+.footer-info h4,
+.footer-links h4,
+.footer-app h4 {
+  margin-bottom: 12px;
+}
+
+.social-icons span {
+  background: var(--white);
+  color: var(--primary-pink);
+  border-radius: 50%;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.qr-placeholder {
+  width: 80px;
+  height: 80px;
+  background: var(--primary-blue);
+  border-radius: 12px;
+  margin-top: 12px;
+}
+
+@media (max-width: 900px) {
+
+  .welcome-content,
+  .app-info,
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .clubs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .clubs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-cards {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
